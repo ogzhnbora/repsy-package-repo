@@ -35,7 +35,7 @@ It allows users to:
 docker pull oguzhanbora/repsy-app:latest
 
 docker run -d -p 8080:8080 \
-  -e SPRING_DATASOURCE_URL=jdbc:postgresql://your-database-url:5432/repsydb \
+-e SPRING_DATASOURCE_URL=jdbc:postgresql://localhost:5432/repsydb
   -e SPRING_DATASOURCE_USERNAME=postgres\
   -e SPRING_DATASOURCE_PASSWORD=12345\
   -e STORAGE_STRATEGY=fileSystemStorage \
