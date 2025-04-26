@@ -1,0 +1,41 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 
+                             https://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+  <modelVersion>4.0.0</modelVersion>
+
+  <!-- Inherit Spring Boot versions -->
+  <parent>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-parent</artifactId>
+    <version>3.4.5</version>
+    <relativePath/> 
+  </parent>
+
+  <groupId>com.example.storage</groupId>
+  <artifactId>storage-filesystem</artifactId>
+  <version>0.0.1</version>
+  <packaging>jar</packaging>
+
+  <dependencies>
+    <!-- versiyonları parent POM'dan alacak -->
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-web</artifactId>
+    </dependency>
+  </dependencies>
+
+  <distributionManagement>
+  <repository>
+    <id>repsy</id>
+    <name>My Private Maven Repository on Repsy</name>
+    <url>https://repo.repsy.io/mvn/oguzhanbora/storage</url>
+  </repository>
+  </distributionManagement>
+
+</project>
